@@ -6,7 +6,7 @@ import java.io.*;
 import java.sql.*;
 
 public class Register extends HttpServlet {
-
+	
     public static final String JDBC_URL = "jdbc:mysql://localhost:3306/newuser";
     public static final String JDBC_USER = "askarthikey";
     public static final String JDBC_PASS = "ask";
@@ -41,3 +41,4 @@ public class Register extends HttpServlet {
         }
     }
 }
+

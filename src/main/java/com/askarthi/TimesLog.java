@@ -20,7 +20,7 @@ public class TimesLog extends HttpServlet {
     private void handleLogin(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        
+      
 
         try (Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASS)) {
             String sql = "SELECT * FROM users WHERE username=? AND password=?";
